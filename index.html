@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;900&family=Poppins:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
+</head>
+<script>
+    
+window.addEventListener("scroll",function(e){
+var h=window.scrollY;
+
+if(h>790){
+document.getElementById("slide1").style.opacity="1";
+}
+else{
+    document.getElementById("slide1").style.opacity="0";
+}
+
+});
+
+function r(){
+    document.querySelector("#buy").style.opacity="0";
+    document.querySelector("#buy").style.zIndex="-1";
+}
+
+</script>
+<script src="./script.js" defer></script>
+<body>
+    <div id="nav">
+        <p id="logo">Shoes</p>
+        <a href="#shape2">Home</a>
+        <a href="#wrap">Products</a>
+        <a href="">Quality</a>
+        <a href="">Gallery</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div id="cover">
+   <div id="shape1"></div>
+   <div id="shape2"></div>
+   <div id="coverimg"></div>
+   <p >Luck Favours The<sk id="g"> BOLD.</sk></p>
+    </div>
+    <div id="home">
+        <div id="slide1">
+           <p id="text1">Deal Of The Day</p>
+           <p id="t1">Nike InfinityRN 4</p>
+   <p id="sale">50% Off</p>
+           <div id="img1"></div>
+          
+        </div>
+       
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&family=Poppins:ital,wght@0,100;1,500&display=swap');
+      </style>
+    <div id="products">
+        <input type="text" id="search" placeholder="Search Here" oninput="search();" spellcheck="false"><i class="fa fa-search"></i>   </input>
+        <select>
+            <option value="All">All</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Children">Children</option>
+        </select>
+        <div id="wrap">
+        <div class="card"  style="--color:crimson;--url:url('./shoe1.jpg')" onclick="element=1;show()"><p>Nike Pegasus 40</p>
+        <button>Buy Now</button>
+        </div>
+        <div class="card" style="--color:chocolate;--url:url('./shoe2.png')" onclick="element=2;show()"><p>Nike  <b style="color:#beadfa">Zoom X</b></p>
+            <button>Buy Now</button>
+            </div>
+            <div class="card"  style="--color:#25ffc8;--url:url('./shoe3.png')" onclick="element=3;show()"><p>Nike Pegasus 10</p>
+                <button>Buy Now</button>
+                </div>
+              
+                    <div class="card"  style="--color:#beadfa;--url:url('./shoe4.png')" onclick="element=4;show()"><p>Nike Rival Fly 3</p>
+                        <button>Buy Now</button>
+                        </div>
+                        <div class="card"  style="--color: #33BBC5;--url:url('./shoe5.png')" onclick="element=5;show()"><p>Nike Alphafly 2</p>
+                            <button>Buy Now</button>
+              
+                            </div>
+                            <div class="card"  style="--color: coral;--url:url('./shoe6.png')" onclick="element=6;show()"><p>Metcon 9 Easyon</p>
+                                <button>Buy Now</button>
+                  
+                                </div>
+                                <div class="card"  style="--color: rgb(255, 123, 0);--url:url('./shoe7.png')" onclick="element=7;show()"><p style="color:rgb(255, 223, 230)">Nike InfinityRN 4</p>
+                                    <button>Buy Now</button>
+                      
+                                    </div>
+                                    <div class="card"  style="--color: lightsteelblue;--url:url('./shoe8.png')" onclick="element=8;show()"><p>Flex Runner 2</p>
+                                        <button>Buy Now</button>
+                          
+                                        </div>
+                                        <div class="card"  style="--color: #33BBC5;--url:url('./shoe9.png')" onclick="element=9;show()"><p>Nike <b style="color:#beadfa;font-size: 1.8rem;"> GT </b>Jump </p>
+                                            <button>Buy Now</button>
+                              
+                                            </div>
+                                            <div class="card"  style="--color: #f0f0f0;--url:url('./shoe10.png')" onclick="element=10;show()"><p>Nike Pure Aura</p>
+                                                <button>Buy Now</button>
+                                  
+                                                </div>
+                                        
+                            <div id="buy" open>
+                              
+                                <div id="close" >&#10060;</div>
+                                <div id="mask" onclick="r();"></div>
+                                <div id="img"></div>
+                                <div id="title">Hello</div>
+                              <div id="price"></div>
+                            </div>
+            
+    </div>
+</body>
+</html>
